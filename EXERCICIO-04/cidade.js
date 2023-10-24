@@ -10,10 +10,10 @@ while (continuar === "Sim") {
     let cidade = prompt("Qual é o nome da cidade visitada?")
     cidades += " - "+ cidade + "/n"
     contagem++
-    continuar = prompt("VocÊ visitou alguma outra cidade? (Sim/Não)")
+    continuar = prompt("Você visitou alguma outra cidade? (Sim/Não)")
 }
 alert(
-    "Turica" + nome+
-    "/nQuantidade de cidades visitadas" + contagem +
-    "/nCidades visitadas:/n" + cidades
+    "Turista: " + nome+
+    "\nQuantidade de cidades visitadas: " + contagem +
+    "\nCidades visitadas:\n" + cidades
 )
