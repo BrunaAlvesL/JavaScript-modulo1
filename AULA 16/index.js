@@ -10,5 +10,5 @@ if (idade > 18){
 }
 
 // ou usando o operador ternario
-//Const resultado = (6===) ? "verdadeiro" : "Falso"
+//Const resultado = (6===6) ? "verdadeiro" : "Falso"
 // console.log(resultado)

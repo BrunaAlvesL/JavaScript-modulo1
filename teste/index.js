@@ -1,12 +1,20 @@
-const unidade = prompt('Digite em valor em metros:')
+const nome = prompt("Quando é o seu nome?")
+let cidade = ''
+let contagem  = 0
 
-const mm = unidade
-const cm = unidade
-const dm = unidade
-const dam = unidade
-const hm = unidade
-const km = unidade
+const pergunta = prompt('Voce ja visitou alguma cidade? sim ou não')
 
-switch (unidade) {
-    
+while(pergunta === 'sim' ){
+    let visita = prompt('Qual cidade você visitou?')
+    cidade += ' - ' + visita
+    contagem++
+    const pergunta = prompt('Voce ja visitou alguma cidade? sim ou não')
 }
+
+alert('Olá ' + nome + 
+       "\nQuantidade de cidades visitadas: " + contagem +
+      "\nCidades visitadas:\n" + cidades)
+
+
+
+
