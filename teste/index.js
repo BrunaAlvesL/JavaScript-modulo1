@@ -1,35 +1,12 @@
-let fila = []
-let opcao = ""
+const carro1 = prompt('Qual o nome do primeiro carro?')
+const velocidade = prompt('Qual é a velocidade?')
+const carro2 = prompt('Qual o nome do segundo carro?')
+const velocidade2 = prompt('Qual é a velocidade?')
 
-do{
-    let pacientes = ""
-    for(let i = 0; i < fila.length; i++) {
-        pacientes +=(i + 1) + "° - " + fila[i] + "\n"
-    }
-
-    opcao = prompt("pacientes:\n" + pacientes +
-    "\nEscolha uma ação: \n1 - Novo paciente\n2 - Consultar paciente\n3 - Sair")
-
-
-    switch (opcao) {
-        case "1":
-            const novoPaciente = prompt("Qual é o nome do paciente")
-            fila.push(novoPaciente)
-            break
-        case "2":
-            const pacienteConsultado = fila.shift()
-            if (!pacienteConsultado) {
-                alert("Não há mais pacientes na fila")
-            }else {
-                alert(pacienteConsultado + "foi removido da fila.")
-            }
-            break
-        case "3":
-            alert("Encerrado")
-            break
-        default:
-            alert("Opção invalida")
-            break
-    }
-    
-} while(opcao !== "3");
+if(velocidade > velocidade2){
+    alert(carro1 + " é mais rapido")
+}else if(velocidade2 > velocidade){
+    alert(carro2 + " é mais rapido")
+}else if(velocidade == velocidade2){
+    alert("Os dois carros tem a mesma velocidade")
+}
